@@ -1,0 +1,169 @@
+
+
+
+.main{
+  font-family: var(--fontFMain);
+}
+
+h1,h2,h3{
+  font-weight: var(--fontWTitles);
+}
+
+h2,h3{
+  font-size: 2em;
+}
+h1{
+  font-size: 7em;
+  margin: 0;
+}
+span,p{
+  font-weight: var(--fontWMain);
+}
+
+.banner p, .mainContent p{
+  font-family: var(--fontFContent);
+  font-size: 1.4em;
+  text-align: justify;
+}
+
+.banner {
+  height: 100vh;
+  background-image: url("../public/images/infImg.jpg");
+  background-size: cover; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+
+
+.banner .content{ 
+  width: 1200px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+button{ 
+  width: 200px;
+  height: 50px;
+  background-color: white;
+  border: none;
+  text-decoration: none;
+  font-family: var(--fontFContent);
+  font-size: 1.2em;
+  border-radius: 50px;
+  border: 1px solid black;
+  transition: 0.5s;
+}
+
+button:hover{ 
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+  
+}
+
+
+
+
+
+.mainContent, .galleryContent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  
+}
+
+.mainContent > *, .galleryContent > *{
+  
+  background-color: white;  
+  width: 1200px;
+  position: relative;
+  bottom: 30px;
+  padding: 1em;
+  z-index: 10;
+  
+}
+
+.mainContent .infoTitle, .galleryContent .infoTitle{
+  border: solid black;
+  border-width:  1px 1px 0 1px ;
+}
+
+.mainContent .about{
+  
+  border: black solid ;
+  border-width: 1px 1px 0 1px;
+  display: flex;
+  gap: 2em;
+}
+
+.mainContent .about .contentTxt{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  text-align: justify;
+}
+
+.mainContent .about .img img{
+  height: 500px;
+}
+
+.mainContent .news{
+  display: flex;
+  gap: 2em;
+}
+
+.galleryContent .gallery h3{
+  margin: 10px;
+  text-align: center;
+
+}
+
+.galleryContent .gallery{
+  border: solid black;
+  border-width:  1px 1px 0 1px ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+
+.galleryContent .gallery .liga , .galleryContent .gallery .kids {
+  width: 100%;
+  display: flex;
+}
+
+.galleryContent .gallery .liga .left , .galleryContent .gallery .kids .left {
+ width: 600px;
+ display: flex;
+ gap: 2px;
+ flex-wrap: wrap;
+}
+
+.galleryContent .gallery .liga .right img, .galleryContent .gallery .kids .right img{
+  width: 700px;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  height: 100%;
+  
+}
+.galleryContent .gallery .liga .left img, .galleryContent .gallery .kids .left img{
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  width: 248px;
+}
+
+.galleryContent .gallery .liga .left img:target{
+transform: scale(1.5);
+}

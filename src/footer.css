@@ -1,0 +1,28 @@
+.footer{
+    font-family: var(--fontFContent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .content{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .content .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer .content .right .contentRight{
+    display: flex;
+    gap: 0.5em;
+}
+
+.footer .content .right img{
+    width: 40px;
+    border-radius: 100%;
+    
+}
