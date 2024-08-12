@@ -79,7 +79,8 @@ button:hover{
   flex-direction: column;
   justify-content: center;
   align-items: center; 
-  
+  border: 1px solid black;
+  border-width: 1px 1px 0 1px ;
 }
 
 .mainContent > *, .galleryContent > *{
@@ -90,8 +91,11 @@ button:hover{
   bottom: 30px;
   padding: 1em;
   z-index: 10;
-  
+  border: 1px solid black;
+  border-width: 1px 1px 0 1px ;
 }
+
+
 
 .mainContent .infoTitle, .galleryContent .infoTitle{
   border: solid black;
@@ -121,12 +125,26 @@ button:hover{
 .mainContent .news{
   display: flex;
   gap: 2em;
+  
+}
+
+.mainContent .news .content{
+  padding: 1em;
+  transition: 0.5s;
+  
+  border: 1px solid white;
+}
+.mainContent .news .content:hover{
+background-color:  rgb(248, 240, 230);
+transition: 0.5s;
+
+border: 1px solid black;
 }
 
 .galleryContent .gallery h3{
   margin: 10px;
   text-align: center;
-
+  
 }
 
 .galleryContent .gallery{
@@ -167,3 +185,4 @@ button:hover{
 .galleryContent .gallery .liga .left img:target{
 transform: scale(1.5);
 }
+
